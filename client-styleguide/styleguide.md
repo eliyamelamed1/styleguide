@@ -3,20 +3,30 @@
 ## Root Level Directories
 
 - **components/**: Contains reusable UI elements.
+
 - **hooks/**: Holds custom React hooks for shared logic.
+
 - **utils/**: Stores utility functions for common tasks.
+
 - **Groups**: Parentheses denote logical grouping (e.g., (ui)/) to enhance organization and navigability.
+
 - **Features**: Modular units of functionality, either shared or page-specific, for scalable code.
 
 ## Features
+- **Structure**: Each feature is a self-contained unit, facilitating easy reuse and maintenance.
+
 - **Shared vs. Page-Specific**:
   - Shared features are available application-wide.
   - Page-specific features are tailored for individual pages, containing all necessary logic, components, hooks, and utilities for that page.
-- **Structure**: Each feature is a self-contained unit, facilitating easy reuse and maintenance.
-- **Public API**: The index.js file in each feature folder serves as the entry point, exporting the feature's functionalities for application-wide use.
+
+- **Feature Entry Point**: index.js acts as the central access point for each feature's functionalities.
+Ensures consistent, modular integration across the application.
+  - Internal Use: Prefer direct file imports within the feature to avoid dependencies issues.
+  - External Use: Use index.js for imports outside the feature for a clean and organized interface. 
 
 ## Pages Directory
 - Contains individual pages of the application, each potentially housing exclusive features.
+
 - **Exclusive Features**: Features within a page directory are designed to be used exclusively by that page, emphasizing the importance of tailored functionality to enhance page performance and user experience.
 
 ## Parentheses Groups vs. Features
