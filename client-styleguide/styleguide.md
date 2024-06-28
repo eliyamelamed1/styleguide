@@ -76,3 +76,46 @@ The use of parentheses (`(ui)/`) as a syntax for naming groups within directorie
   - **Characteristics:** A self-contained module or feature that has everything needed together, allowing for easy maintenance, updates, or reuse.
 
 This approach ensures the project remains organized, scalable, and maintainable by clearly distinguishing between utility and specific functionality.
+
+### File Naming Conventions
+
+To maintain a clear and consistent structure, we adopt a standardized file naming format:
+
+```
+name.subtype.ext
+```
+
+- **name**: Primary purpose or component of the file.
+- **subtype**: subtype of the file (optional) used exclusively by the main file: (`utils`, `consts`, `schemas`, or `types`).
+- **ext**: File extension (usually `.js`).
+
+#### Subtypes
+
+Each file can be divided into the following subtypes:
+
+- **utils**: Utility functions (e.g., `Example.utils.js`)
+- **consts**: Constants (e.g., `Example.consts.js`)
+- **types**: Type definitions (e.g., `Example.types.js`)
+- **schemas**: Schemas (e.g., `Example.schemas.js`)
+
+#### Consistency
+
+Always retain the original name when adding a subtype to keep related files grouped and easily recognizable.
+
+##### Example
+
+For a component named `Example`, the files would be:
+
+- `Example.js`
+- `Example.utils.js`
+- `Example.consts.js`
+- `Example.types.js`
+- `Example.schemas.js`
+
+This structure improves organization, readability, and maintainability.
+
+#### Naming Conventions for Specific Files
+
+- **React Components**: Should be written in PascalCase (e.g., `UserProfile.js`).
+- **React Hooks**: Should be written in camelCase (e.g., `useProfileData.js`).
+- **Other Files**: Should be written in kebab-case (e.g., `axios-service.js`).
