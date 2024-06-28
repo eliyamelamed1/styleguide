@@ -15,10 +15,6 @@
 #### Features
 - **Structure**: Each feature is a self-contained unit, facilitating easy reuse and maintenance.
 
-- **Shared vs. Page-Specific**:
-  - Shared features are available application-wide.
-  - Page-specific features are tailored for individual pages, containing all necessary logic, components, hooks, and utilities for that page.
-
 - **Feature Entry Point**: index.js acts as the central access point for each feature's functionalities.
 Ensures consistent, modular integration across the application.
   - Internal Use: Prefer direct file imports within the feature to avoid dependencies issues.
