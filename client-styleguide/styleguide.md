@@ -87,7 +87,7 @@ name.subtype.ext
 
 - **name**: Primary purpose or component of the file.
 - **subtype**: subtype of the file (optional) used exclusively by the main file: (`utils`, `consts`, `schemas`, or `types`).
-- **ext**: File extension (usually `.js`).
+- **extension**: File extension (usually `.js`).
 
 #### Subtypes
 
